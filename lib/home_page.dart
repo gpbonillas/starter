@@ -15,6 +15,7 @@
 // TODO: Import google_mobile_ads.dart
 
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -87,6 +88,6 @@ class HomePage extends StatelessWidget {
 
   Future<dynamic> _initGoogleMobileAds() {
     // TODO: Initialize Google Mobile Ads SDK
-    return Future.value(0);
+    return MobileAds.instance.initialize();
   }
 }
